@@ -1,0 +1,233 @@
+ <!DOCTYPE html>
+ {% load static %}
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>쿠키만드는 쿠핏</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.k-bread.com/favicon.ico">
+    <link rel="stylesheet" href = "{% static 'css/main.css'%}">
+
+  
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">COOFIT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BRAND
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">브랜드 스토리</a></li>
+              <li><a class="dropdown-item" href="#">명장 이민규</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRODUCT
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="{% url 'homepage:new_product' %}">전체제품</a></li>
+              <li><a class="dropdown-item" href="#">구움과자</a></li>
+              <li><a class="dropdown-item" href="#">빵</a></li>
+              <li><a class="dropdown-item" href="#">케이크</a></li>
+              <li><a class="dropdown-item" href="#">초콜릿</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COMMUNITY
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">공지사항</a></li>
+              <li><a class="dropdown-item" href="#">이벤트</a></li>
+              <li><a class="dropdown-item" href="#">SNS</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">1:1문의</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+       <ul class="navbar-nav">
+          <a href="{% url 'homepage:login' %}" id= "Login"><img src="img/enter.png" alt="" width="20px" style="margin-right: 10px;">Login</a>
+          <a href="{% url 'homepage:join' %}" id="Login" ><img src="img/login.png" alt="" width="20px" style="margin-right: 10px;">Join</a>
+          <a href="#" id="Login"><img src="img/list.png" alt="" width="20px" style="margin-right: 10px;">List</a>
+          <a href="#" id="Login"><img src="img/shopping-cart.png" alt="" width="20px" style="margin-right: 10px;">Cart</a>
+         </ul> 
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-lg-6 col-xs-5" >
+            <div class="img-box">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/story_visual2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/story_visual3.jpg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/story_visual4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src=" https://www.k-bread.com/_skin/sw_kor_1/img/main/story_visual5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+              
+        </div> 
+    </div>
+      </div> 
+      </div> 
+
+      <div class="container" style="background-color: rgb(255, 250, 250); padding-bottom: 100px;">
+        <div class="row"> 
+            <div class="col-lg-4 col-xs-6">
+              <hr style="margin-top: 200px;">
+              <h3>PRODUCTS</h3>
+              <p>건강한 음식을 만드는 쿠핏</p>
+              
+              <div class="img-box" id ="product-bread" style="margin-top: 70px;">
+              <a class="a-ch" href="#" style="text-align: center;">
+                <div class = "div-ch" >
+                <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/img_product1.jpg" alt="" style="width:100%;">
+                
+                <span class="hover-ch" style="font-family: 'GmarketSansLight';">BREAD -></span>
+            </div>  </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+              <div class="img-box" style="margin-top: 100px;">
+                <a class="a-ch" href="#" style="text-align: center;">
+                  <div class = "div-ch">
+              <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/img_product2.jpg" alt="" style="width:100%;">
+              <span class="hover-ch" style="font-family: 'GmarketSansLight';">CHOCOLATE -></span>
+              </div></a>
+              <div class="img-box" style="margin-top: 30px;">
+                <a class="a-ch" href="#" style="text-align: center;">
+                  <div class = "div-ch">
+                <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/img_product4.jpg" alt="" style="width:100%;">
+                <span class="hover-ch" style="font-family: 'GmarketSansLight';">COOKIE -></span>
+              </div></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-xs-6">
+            <div class="img-box" style="margin-top: 170px;">
+              <a class="a-ch" href="#" style="text-align: center;">
+                <div class = "div-ch">
+            <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/img_product3.jpg" alt="" style="width:100%;">
+            <span class="hover-ch" style="font-family: 'GmarketSansLight';">CAKE -></span>
+          </div></a>
+            </div>
+        </div>
+      
+        
+      </div>
+    </div>
+ 
+       
+       <div class="container" style="padding-bottom: 100px;text-align: center;">
+
+      <hr style="margin-top: 100px;">
+      <h3 style="text-align: center;">NEW PRODUCT</h3>
+      
+      
+    
+       <div class="album py-5 bg-light">
+        <div class="container">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2020/08/08/51cf074edc09724326149fa671dddc791.jpg"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">스모어쿠키</h5>
+                                        <p class="card-text">초코쿠키 속에 마시멜로우가 녹아있어요:)</p>
+                                        <a href="#" class="">구매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://static.wtable.co.kr/image/production/service/recipe/1855/0e22247b-d78e-4673-b4d9-9655844e1cf2.jpg"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">스쿱쿠키</h5>
+                                        <p class="card-text">쿠키 모양이 아이스크림 같아요:)</p>
+                                        <a href="#" class="">구매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://happyhappyacademy.com/wp-content/uploads/2021/12/%EC%9D%B4%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90%EC%84%9C%EB%B0%B0%EC%9A%B0%EB%8A%94_americancookie_recipe_02.png"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">아메리칸쿠키</h5>
+                                        <p class="card-text">겉바속촉, 두툼하고 투박한 모양, 꾸덕한 식감과 먹음직스러운 비주얼</p>
+                                        <a href="#" class="">구매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+  <div class="container"  style="text-align: center; margin-top: 100px;">
+    <img src="https://www.k-bread.com/_skin/sw_kor_1/img/main/main_sec06.jpg" alt="">
+    <div class="row">
+      <div class="col "><a href="#"><img src="https://bn1304files.storage.live.com/y4mc6BxACbwrCQKNO1IpquVPGG_fNQyVDHbKXrMlazZHzz4Feh3BG3GX1LLkAIIf7sO7dgtvg_vS1y2-K9HxUFiwInP-eqZ8OAUPC0MqVsWxzoKh73kJMTcivfEOaazXxmOThKZxUc83rXFnhqBeF6l8L5EFsjSZaHNg6kZ_-Hzc6LeEwwvymbD0avQizMpKuKQoSPXr7LKXVO9Qg0EDP3Mu2YtkbKMHXoXUAxAD8IwxSc?encodeFailures=1&width=957&height=493" alt="" height= 220px; ></a></div>
+
+    </div>
+    <div class="row">
+      <div class="col "><a href="#"><img src="https://bn1304files.storage.live.com/y4mq8if1OiNeD69nXdBdUlVov7_L6PjFbtgrFmzw6AiZ81-vuN8KcOVsD-LklJxyngToc3we7SA909HoJSfdSrBVYDTYG5KCo-72YfBkptzz-aPm-IAVSmR174r7nZ1e82tp_SELwks0UaA0zyzP6OWIVv0mx7KHX2BGQAsV8cu4yQgGz-HCAvNLanBVUbVNnMuEjHoI-B6-1VVxPF6hD19F4gr4jc2a2nJsVKkY6zMNr0?encodeFailures=1&width=957&height=671" alt=440px; height= 220px; ></a></div>
+      <div class="col"><a href="#"><img src="https://bn1304files.storage.live.com/y4mD4gTRlaYFZAvgNQzxIsur39qnDoVwqnTTd26kv7YUDJwRRITTQDAqbCFq35_P5DvGpeeoRj1aibp0QA5U5pNgEydjwHAV1kS4wobhc1pdBZ0ucCFXtMcTykkdn-57LGX4xNy9i1djzPEWi9LfrqSbBaP5uTcOYfdiEUK9Q-WxyX2qXK45EXharYz7cnsUnH7bA2m26A9bJc8drAZRgTQIqFFUNq8olaTEPSanQRu_I0?encodeFailures=1&width=522&height=281" alt="" height= 220px;></a></div>
+   
+    </div>
+    <div class="row">
+      <div class="col"><a href="#"><img src="https://kbread2.wisacdn.com/board/_data/gallery_3/201810/31//gallery_3_0_1583482845.jpg" alt="" height= 220px;></a></div>
+      <div class="col"><a href="#"><img src="https://bn1304files.storage.live.com/y4mOqvxSRBBCmlC5QQenFqFjKpk8PB_VeYN3GrKRlb-E1pGsm7CNlm8PedLLoqn7jAhD3NoBSw7umXJtF9ZieLRbWU_BLzKMRiw3tkEkAqaN2_FMFUCQCr4jbARP0QG5CpdoQ6SPaDsiOrrj2Ok7uoVteyQ3Oxvn4pVWspB-tdwbW7BTkcdV6_oRN57h7lsxBeHuNDbrKBZMHW2_P0eNkjusbiHk1TWO6C7-fpItzeSGew?encodeFailures=1&width=957&height=594" alt="" height= 220px;></a></div>
+  </div>
+            
+</div>
+
+  <div style="background-color: #2F2B29; margin-top: 100px;  text-align: center;">
+  <ul>
+    <li class="footer-li"><a href="#" style="color: white; text-decoration: none;">이용약관</a></li> |
+    <li class="footer-li"><a href="#" style="color: white; text-decoration: none;">개인정보처리방침</a></li> |
+      <li class="footer-li"><a href="#" style="color: white; text-decoration: none;">인재채용</a></li> |
+        <li class="footer-li"><a href="#" style="color: white; text-decoration: none;">협력 및 제안문의</a></li>
+  </ul>
+  </div> 
+  </body>
+ </html>
+
